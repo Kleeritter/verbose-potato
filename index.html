@@ -8,8 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
+  <script>
+  AOS.init();
+</script>
   <script> const jsConfetti = new JSConfetti()
 
 jsConfetti.addConfetti()
@@ -17,7 +22,7 @@ jsConfetti.addConfetti()
 <h1>Curriculum Vitae</h1>
 Alla
 <p>Hier können sie gerne meinen Lebenslauf herunterladen.</p>
-  <div class="container">
+  <div class="container" data-aos="fade-right">
     <div class="buttonHolder">
         <button id="showPDF01">Show Summary</button>
         <button id="showPDF02">Show Brochure</button>
