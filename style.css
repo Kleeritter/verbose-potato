@@ -1,6 +1,17 @@
 h1{
   color: white
 }
+h2{
+  color:white
+}
+p{
+  color:white
+}
+img{
+border-radius: 25px;
+width: 50vw;
+heigth: auto;
+}
 body{
 font-family: 'Quicksand', sans-serif;
 background: rgb(131,58,180);
