@@ -11,6 +11,7 @@ img{
 border-radius: 25px;
 width: 50vw;
 heigth: auto;
+margin: auto;
 }
 body{
 font-family: 'Quicksand', sans-serif;
