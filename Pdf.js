@@ -1,9 +1,9 @@
-const clientId = "e800d12fc12c4d60960778b2bc4370af";
+const clientId = "bf158cd010214292a00fa8b818b1b581";
 const viewerOptions = {
     embedMode: "LIGHT_BOX",
     defaultViewMode: "FIT_PAGE",
-    showDownloadPDF: false,
-    showPrintPDF: false
+    showDownloadPDF: true,
+    showPrintPDF: true
 };
 
 function fetchPDF(urlToPDF) {
