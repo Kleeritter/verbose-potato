@@ -31,7 +31,7 @@ function showPDF(urlToPDF) {
 
 document.addEventListener("adobe_dc_view_sdk.ready", function () {
     document.getElementById("showPDF01").addEventListener("click", function () {
-        showPDF("https://documentcloud.adobe.com/view-sdk-demo/PDFs/Summary.pdf")
+        showPDF("/daten/Lebenslauf.pdf")
     });
     document.getElementById("showPDF02").addEventListener("click", function () {
         showPDF("https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf")
