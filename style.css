@@ -17,11 +17,8 @@ heigth: auto;
 }
 body{
 font-family: 'Quicksand', sans-serif;
-background: rgb(131,58,180);
-background: -moz-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
+background: rgb(116,140,209);
+background: linear-gradient(210deg, rgba(116,140,209,1) 0%, rgba(79,88,99,1) 100%, rgba(19,26,37,1) 100%);
 }
 .container {
     width: 100%;
