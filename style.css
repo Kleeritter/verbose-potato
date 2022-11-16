@@ -1,24 +1,66 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(daten/Goca\ logotype\ beta.ttf);
+}
 h1{
-  color: white
+  font-family: myFirstFont;
+  color: #88c0d0;
+  font-size: 50px;
+  @media screen and (max-height: 450px) {
+font-size: 20px;
+	  }
+ 
 }
 h2{
   color:white
 }
+h3{
+  color:#2e3440
+}
 p{
+  font-family: Quicksand;
   color:white
 }
+
 img{
 border-radius: 25px;
 width: 50vw;
-heigth: auto;
+height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 body{
 font-family: 'Quicksand', sans-serif;
-background: rgb(116,140,209);
-background: linear-gradient(210deg, rgba(116,140,209,1) 0%, rgba(79,88,99,1) 100%, rgba(19,26,37,1) 100%);
+background: white;
+color: #2e3440;
+
+}
+.hallo{
+  color: gray;
+  max-width: 800px;
+  }
+
+.wer{
+  width: 100vw;
+  background-color: #2e3440;
+  height: 30vh;
+}
+
+.projekte{
+  width: 100vw;
+  background-color: #2e3440;
+  height: 30vh;
+}
+.meteo{
+  width: 100vw;
+  background-color: #2e3440;
+  height: 30vh;
+}
+.katze{
+  width: 100vw;
+  background-color: #2e3440;
+  height: 30vh;
 }
 .container {
     width: 100%;
@@ -37,7 +79,7 @@ background: linear-gradient(210deg, rgba(116,140,209,1) 0%, rgba(79,88,99,1) 100
 }
 
 button {
-    background-color: #748cd1;
+    background-color: #8fbcbb;
     border: none;
     padding: 15px 32px;
     color: white;
@@ -179,3 +221,4 @@ button {
   -webkit-line-clamp: 3;
   overflow: hidden;
 }    
+
