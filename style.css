@@ -12,23 +12,26 @@ font-size: 20px;
  
 }
 h2{
-  color:white
+    font-family: myFirstFont;
+    color: #88c0d0;
+    font-size: 40px;
+    @media screen and (max-height: 450px) {
+  font-size: 15px;
+      }
 }
 h3{
   color:#2e3440
 }
 p{
   font-family: Quicksand;
-  color:white
+  color:black;
+  text-align: center;
+  position: relativ;
 }
 
-img{
-border-radius: 25px;
-width: 50vw;
-height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.Wurst{
+  position: absolute;
+  z-index:  -100;
 }
 body{
 font-family: 'Quicksand', sans-serif;
@@ -41,184 +44,116 @@ color: #2e3440;
   max-width: 800px;
   }
 
-.wer{
+  .containera {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    max-width: 800px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "GTW Trompeter MW-MESSNETZ";
+  }
+  
+  .GTW { grid-area: GTW;
+    position: relative;
+  text-align: center;}
+  
+  .Trompeter { grid-area: Trompeter;    position: relative;
+    text-align: center; }
+  
+  .MW-MESSNETZ { grid-area: MW-MESSNETZ;    position: relative;
+    text-align: center;  }
+  
+  .Blob{ 
+
+
+  }
+  .Blobtext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  Img:hover{
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+animation: shake 0.5s;
+
+/* When the animation is finished, start again */
+animation-iteration-count: infinite;
+
+}
+footer{
+  background-image:url("daten/Berge.svg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   width: 100vw;
-  background-color: #2e3440;
-  height: 30vh;
-}
+  aspect-ratio: 16/9;
+  max-height: 600px;
 
-.projekte{
+}
+.aurora{
   width: 100vw;
-  background-color: #2e3440;
-  height: 30vh;
+  height: 15vh;
+  max-height: 300px;
+overflow: hidden;
+
 }
-.meteo{
-  width: 100vw;
-  background-color: #2e3440;
-  height: 30vh;
-}
-.katze{
-  width: 100vw;
-  background-color: #2e3440;
-  height: 30vh;
-}
-.container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+.aurora img{
+  width: 150vw;
+  aspect-ratio: 16/9;
+  max-height: 300px;
+  animation: colors ;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+
 }
 
-.buttonHolder {
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-}
+  .Blobo{ 
+    width: 120px;
+    height: 120px;
+background-image:  url("daten/blob1.svg"); 
+background-size: cover;
+background-position: center center;
+    position: relative;
+    }
 
-button {
-    background-color: #8fbcbb;
-    border: none;
-    padding: 15px 32px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 10px;
-    margin: 10px auto;
-    cursor: pointer;
-    display: block;
-}
+    .gtwbild{
+      width: 100%;
+      height: auto;
 
-#background-video {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-}
+    }
 
+    .aurora{
+      overflow: hidden;
+    }
 
-
-:root {
-  --surface-color: #fff;
-  --curve: 40;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 4rem 5vw;
-  padding: 0;
-  list-style-type: none;
-}
-
-.card {
-  position: relative;
-  display: block;
-  height: 100%;  
-  border-radius: calc(var(--curve) * 1px);
-  overflow: hidden;
-  text-decoration: none;
-}
-
-.card__image {      
-  width: 100%;
-  height: auto;
-}
-
-.card__overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;      
-  border-radius: calc(var(--curve) * 1px);    
-  background-color: var(--surface-color);      
-  transform: translateY(100%);
-  transition: .2s ease-in-out;
-}
-
-.card:hover .card__overlay {
-  transform: translateY(0);
-}
-
-.card__header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 2em;
-  padding: 2em;
-  border-radius: calc(var(--curve) * 1px) 0 0 0;    
-  background-color: var(--surface-color);
-  transform: translateY(-100%);
-  transition: .2s ease-in-out;
-}
-
-.card__arc {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  bottom: 100%;
-  right: 0;      
-  z-index: 1;
-}
-
-.card__arc path {
-  fill: var(--surface-color);
-  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
-}       
-
-.card:hover .card__header {
-  transform: translateY(0);
-}
-
-.card__thumb {
-  flex-shrink: 0;
-  width: 50px;
-  height: 50px;      
-  border-radius: 50%;      
-}
-
-.card__title {
-  font-size: 1em;
-  margin: 0 0 .3em;
-  color: #6A515E;
-}
-
-.card__tagline {
-  display: block;
-  margin: 1em 0;
-  font-family: "MockFlowFont";  
-  font-size: .8em; 
-  color: #D7BDCA;  
-}
-
-.card__status {
-  font-size: .8em;
-  color: #D7BDCA;
-}
-
-.card__description {
-  padding: 0 2em 2em;
-  margin: 0;
-  color: #D7BDCA;
-  font-family: "MockFlowFont";   
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-}    
-
+    @keyframes colors {
+      from {color: #BF616A;}
+      to {color: #B48EAD;}
+    }
+  
+    @keyframes shake {
+      0% { transform: translate(1px, 1px) rotate(0deg); }
+      10% { transform: translate(-1px, -2px) rotate(-1deg); }
+      20% { transform: translate(-3px, 0px) rotate(1deg); }
+      30% { transform: translate(3px, 2px) rotate(0deg); }
+      40% { transform: translate(1px, -1px) rotate(1deg); }
+      50% { transform: translate(-1px, 2px) rotate(-1deg); }
+      60% { transform: translate(-3px, 1px) rotate(0deg); }
+      70% { transform: translate(3px, 1px) rotate(-1deg); }
+      80% { transform: translate(-1px, -1px) rotate(1deg); }
+      90% { transform: translate(1px, 2px) rotate(0deg); }
+      100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+    .fus{
+      display:flex;
+      align-items: center;
+      justify-items: center;
+      width: 100vw;
+      height: 5vh;
+      background-color: #2e3440;
+    }
+    .fus a{
+      color: white;
+    }
